@@ -1,0 +1,21 @@
+{
+  "name": "materialui-next",
+  "version": "3.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^3.0.2",
+    "contentful": "^7.2.0",
+    "jss": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-jss": "^8.1.0"
+  },
+  "scripts": {
+    "dev": "next -p 8080",
+    "build": "next build",
+    "start": "next start -p 8080"
+  }
+}
