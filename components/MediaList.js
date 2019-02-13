@@ -20,7 +20,7 @@ class MediaList extends React.Component {
         return (
             <div className={classes.root}>
                 <Grid container spacing={24}>
-                    {['Media 1', 'Media 2', 'Media 3'].map((text) => (
+                    {['Media 1', 'Media 2'].map((text) => (
                         <Grid container item xs={8} key={text}>
 
                             {['MediaA', 'MediaB', 'MediaC', 'MediaD'].map((name) => (

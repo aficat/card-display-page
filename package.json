@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^3.0.2",
+    "babel-polyfill": "^6.26.0",
     "contentful": "^7.2.0",
     "jss": "latest",
     "next": "latest",
