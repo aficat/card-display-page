@@ -25,7 +25,7 @@ class MyApp extends App {
     return (
       <Container>
         <Head>
-          <title>Media List</title>
+          <title>Item List</title>
         </Head>
         {/* Wrap every page in Jss and Theme providers */}
         <JssProvider

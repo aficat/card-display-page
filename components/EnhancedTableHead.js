@@ -4,8 +4,8 @@ import {TableCell, TableHead, TableRow, TableSortLabel, Tooltip, Checkbox } from
 
 const rows = [
   { id: 'uploadTimeStamp', numeric: false, disablePadding: true, label: 'Upload Time Stamp' },
-  { id: 'mediaTitle', numeric: true, disablePadding: false, label: 'Media Title' },
-  { id: 'mediaLink', numeric: true, disablePadding: false, label: 'Media Link' },
+  { id: 'mediaTitle', numeric: true, disablePadding: false, label: 'Item Title' },
+  { id: 'mediaLink', numeric: true, disablePadding: false, label: 'Item Link' },
   { id: 'status', numeric: true, disablePadding: false, label: 'Status' },
 ];
 

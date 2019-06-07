@@ -20,7 +20,7 @@ const styles = {
     },
 };
 
-class Media extends React.Component {
+class Item extends React.Component {
 
     render() {
         const { classes } = this.props;
@@ -30,15 +30,15 @@ class Media extends React.Component {
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
-                                image="https://wallpaperbrowse.com/media/images/3848765-wallpaper-images-download.jpg"
+                                image="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
                                 title="Contemplative Reptile"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    Media Title
+                                    Item Title
                         </Typography>
                                 <Typography component="p">
-                                    Media Description
+                                    Item Description
                         </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -56,8 +56,8 @@ class Media extends React.Component {
     }
 }
 
-Media.propTypes = {
+Item.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Media);
+export default withStyles(styles)(Item);

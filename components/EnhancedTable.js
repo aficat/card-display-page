@@ -79,7 +79,7 @@ const toolbarStyles = theme => ({
             </Typography>
           ) : (
             <Typography variant="h6" id="tableTitle">
-              Media Status
+              Item Status
             </Typography>
           )}
         </div>

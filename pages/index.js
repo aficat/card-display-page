@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import SideNav from '../components/SideNav';
-import MediaList from '../components/MediaList';
+import ItemList from '../components/ItemList';
 import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
@@ -30,7 +30,7 @@ class Index extends React.Component {
               <Toolbar>
                 <SideNav />
                 <Typography variant="h6" color="inherit" className={classes.grow}>
-                  Media List
+                  Item List
                 </Typography>
                 <Button color="inherit">Login</Button>
               </Toolbar>
@@ -38,7 +38,7 @@ class Index extends React.Component {
           </Grid>
           <Grid item xs={12}>
             <div className={classes.root}>
-              <MediaList />
+              <ItemList />
             </div>
           </Grid>
         </Grid>
