@@ -8,6 +8,7 @@
     "babel-polyfill": "^6.26.0",
     "contentful": "^7.2.0",
     "jss": "^9.8.7",
+    "material-ui-flat-pagination": "^3.2.0",
     "next": "^7.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import EnhancedTableHead  from './EnhancedTableHead';
 import DeleteIcon from '@material-ui/icons/Delete';
-import postmediastatuslist from "../api/postmediastatuslist";
 import { lighten } from '@material-ui/core/styles/colorManipulator';
 import {Table, TableBody, TableCell, TablePagination, TableRow, Toolbar, Typography, Paper, IconButton, Tooltip, Checkbox } from '@material-ui/core';
 
@@ -135,26 +134,6 @@ class EnhancedTable extends React.Component {
     page: 0,
     rowsPerPage: 5,
   };
-
-  componentDidMount() {
-    const { mediaStore, userProfileStore, spyFn } = this.props;
-    const { username, userType } = userProfileStore.loginCred;
-
-    if (spyFn !== undefined)
-        spyFn(); // inform jest that the event handler is working
-
-    postmediastatuslist(username, userType, mediaStore.isMockApi, spyFn)
-        .then((result) => {
-            if ('error' in result)
-                mediaStore.updateError(result);
-            else {
-                mediaStore.updateResponse(result);
-                this.setState({
-                    medias: result.metadata
-                });
-            }
-        });
-}
 
   handleRequestSort = (event, property) => {
     const orderBy = property;

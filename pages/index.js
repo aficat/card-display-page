@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button, Card } from '@material-ui/core';
 import SideNav from '../components/SideNav';
 import ItemList from '../components/ItemList';
+//import EnhancedTable from '../components/EnhancedTable';
 import Grid from '@material-ui/core/Grid';
+import PaginationBar from '../components/PaginationBar';
 
 const styles = theme => ({
   grow: {
@@ -40,6 +42,12 @@ class Index extends React.Component {
             <div className={classes.root}>
               <ItemList />
             </div>
+          </Grid>
+          <Grid item xs={12} style={{ paddingLeft: 600, paddingRight: 600 }} align="center">
+            <Card>
+              <PaginationBar />
+            </Card>
+            {/* <EnhancedTable/> */}
           </Grid>
         </Grid>
       </div>
