@@ -38,16 +38,16 @@ class SideNav extends React.Component {
         const sideList = (
             <div className={classes.list}>
                 <List>
-                    {['Home', ''].map((text, index) => (
+                    {['Home'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <HomeIcon /> : <HomeIcon />}</ListItemIcon>
+                            <ListItemIcon><HomeIcon /></ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
                 </List>
                 <Divider />
                 <List>
-                    {['Upload Item', 'Status List', 'Logout'].map((text, index) => (
+                    {['Upload New Article', 'About Me', 'Logout'].map((text, index) => (
                         <ListItem button key={text}>
                             <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <MailIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
