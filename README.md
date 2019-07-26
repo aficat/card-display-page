@@ -1,4 +1,4 @@
-# vidtube
+# card-display-page
 A simple Next.JS app using Material UI framework. It displays a few items in a page using Material UI cards and also has an AppBar with a Side Navigation. Moreover, it displays the Material UI Table component. Deployed using gh-pages.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
