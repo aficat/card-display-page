@@ -47,11 +47,11 @@ npm install --save gh-pages
 
 ```
   "scripts": {
-+   "predeploy": "npm run build",
-+   "deploy": "gh-pages -d build",
     "dev": "next -p 8080",
     "build": "next build",
-    "start": "next start -p 8080"
+    "start": "next start -p 8080",
++    "export": "next export",
++    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
 ```
 The predeploy script will run automatically before deploy is run.
 
