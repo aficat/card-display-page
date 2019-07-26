@@ -47,7 +47,7 @@ class SideNav extends React.Component {
                 </List>
                 <Divider />
                 <List>
-                    {['Upload New Article', 'About Me', 'Logout'].map((text, index) => (
+                    {['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Logout'].map((text, index) => (
                         <ListItem button key={text}>
                             <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <MailIcon />}</ListItemIcon>
                             <ListItemText primary={text} />

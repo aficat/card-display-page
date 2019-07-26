@@ -18,19 +18,15 @@ class ItemList extends React.Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className={classes.root}>
-                <Grid container spacing={24} justify="center">
-                    {['Item 1', 'Item 2'].map((text) => (
-                        <Grid container item xs={8} key={text} spacing={24}>
-
-                            {['ItemA', 'ItemB', 'ItemC', 'ItemD'].map((name) => (
-                                <Item classes={classes} key={name} />
-                            ))}
-                        </Grid>
-                    ))}
+            <div align="center">
+                <Grid container spacing={24} justify="center" style={{ maxWidth: 1200 }}>
+                    {['Item 1', 'Item 2'].map((text) =>
+                        ['ItemA', 'ItemB', 'ItemC', 'ItemD'].map((name) => (
+                            <Item classes={classes} key={name} />
+                        ))
+                    )}
                 </Grid>
             </div>
-
         );
     }
 }
