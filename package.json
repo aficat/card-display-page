@@ -9,7 +9,7 @@
     "contentful": "^7.2.0",
     "jss": "^9.8.7",
     "material-ui-flat-pagination": "^3.2.0",
-    "next": "^7.0.3",
+    "next": "^9.3.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-jss": "^8.1.0"
